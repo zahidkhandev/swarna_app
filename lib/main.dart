@@ -2,6 +2,7 @@ import 'package:app/screens/aniket.dart';
 import 'package:app/screens/anusshree.dart';
 import 'package:app/screens/favorites.dart';
 import 'package:app/screens/feed.dart';
+import 'package:app/screens/guru.dart';
 import 'package:app/screens/hitesh.dart';
 import 'package:app/screens/message_page.dart';
 import 'package:app/screens/search_page.dart';
@@ -41,6 +42,7 @@ class MyApp extends StatelessWidget {
         MessagePage.routeName: (context) => MessagePage(),
         FeedPage.routeName: (context) => FeedPage(),
         SwarnaPage.routeName: (context) => SwarnaPage(),
+        GuruPage.routeName: (context) => GuruPage(),
         SearchPage.routeName: (context) => SearchPage(),
         FavoritesPage.routeName: (context) => FavoritesPage(),
         ZahidPage.routeName: (context) => ZahidPage(),

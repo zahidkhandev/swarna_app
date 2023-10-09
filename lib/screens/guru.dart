@@ -12,25 +12,24 @@ import 'package:app/widgets/common/reusable_popup.dart';
 import 'package:cloudinary_flutter/image/cld_image.dart';
 import 'package:http/http.dart' as http;
 
-class ZahidPage extends StatefulWidget {
-  static const routeName = '/zahid-profile';
+class GuruPage extends StatefulWidget {
+  static const routeName = '/guru-profile';
 
-  const ZahidPage({super.key});
+  const GuruPage({super.key});
 
   @override
-  State<ZahidPage> createState() => _ZahidPageState();
+  State<GuruPage> createState() => _GuruPageState();
 }
 
-class _ZahidPageState extends State<ZahidPage> {
+class _GuruPageState extends State<GuruPage> {
   List<dynamic> posts = [];
   bool isLoading = true;
 
   Future<void> fetchPosts() async {
-    var url = Uri.https(apiUrl, '/cloudinary-list/Zahid');
+    var url = Uri.https(apiUrl, '/cloudinary-list/Guru');
 
     final response = await http.get(url);
     print(response.statusCode);
-
     if (response.statusCode == 200) {
       final List<dynamic> data = json.decode(response.body);
       setState(() {
@@ -50,6 +49,7 @@ class _ZahidPageState extends State<ZahidPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+
     fetchPosts();
   }
 
@@ -61,7 +61,7 @@ class _ZahidPageState extends State<ZahidPage> {
         backgroundColor: mobileBackgroundColor,
         centerTitle: false,
         title: const Text(
-          'zahid._khan_',
+          'guru_preethan_31',
           style: TextStyle(
             fontSize: 20,
           ),
@@ -78,7 +78,7 @@ class _ZahidPageState extends State<ZahidPage> {
                     CircleAvatar(
                       backgroundColor: Colors.grey,
                       backgroundImage: AssetImage(
-                        'assets/images/zahid.jpeg',
+                        'assets/images/guru.jpeg',
                       ),
                       radius: 40,
                     ),
@@ -91,9 +91,9 @@ class _ZahidPageState extends State<ZahidPage> {
                             mainAxisSize: MainAxisSize.max,
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                              buildStatColumn("20", "posts"),
-                              buildStatColumn("882", "followers"),
-                              buildStatColumn("881", "following"),
+                              buildStatColumn("7", "posts"),
+                              buildStatColumn("124", "followers"),
+                              buildStatColumn("155", "following"),
                             ],
                           ),
                         ],
@@ -107,7 +107,7 @@ class _ZahidPageState extends State<ZahidPage> {
                     top: 15,
                   ),
                   child: Text(
-                    'Zahid',
+                    'Guru Preethan S',
                     style: const TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -119,7 +119,7 @@ class _ZahidPageState extends State<ZahidPage> {
                     top: 5,
                   ),
                   child: Text(
-                    "🤷‍♂️",
+                    "SBOA 2k20\nASE 2k24",
                   ),
                 ),
                 Container(

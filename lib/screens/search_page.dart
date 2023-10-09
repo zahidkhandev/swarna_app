@@ -1,5 +1,6 @@
 import 'package:app/screens/aniket.dart';
 import 'package:app/screens/anusshree.dart';
+import 'package:app/screens/guru.dart';
 import 'package:app/screens/hitesh.dart';
 import 'package:app/screens/zahid.dart';
 import 'package:app/utils/colors.dart';
@@ -87,6 +88,18 @@ class _SearchPageState extends State<SearchPage> {
             followedByText: 'Followed by aniket_762',
             onTap: () => {
               Navigator.pushNamed(context, HiteshPage.routeName),
+            },
+          ),
+          SizedBox(
+            height: 25,
+          ),
+          ProfileSearchCard(
+            imagePath: 'assets/images/guru.jpeg',
+            username: 'guru_preethan_31',
+            displayName: 'Guru Preethan S',
+            followedByText: 'Followed by aniket_762',
+            onTap: () => {
+              Navigator.pushNamed(context, GuruPage.routeName),
             },
           ),
         ],

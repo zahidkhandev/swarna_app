@@ -49,6 +49,15 @@ class _FeedPageState extends State<FeedPage> {
               imageUrl: 'assets/images/anusshree.jpeg',
             ),
             InstagramPost(
+              location: 'Amrita Vishwa Vidyapeetham',
+              accountName: 'zahid._khan_',
+              imageId:
+                  'swarna/Zahid/WhatsApp_Image_2023-10-09_at_08.17.13_1_flwdx2',
+              caption: '<3',
+              timeAgo: '2 hours ago',
+              imageUrl: 'assets/images/zahid.jpeg',
+            ),
+            InstagramPost(
               location: 'Varkala',
               accountName: 'aniket_762',
               imageId: 'swarna/Aniket/zrgspa06gbmyat3plqmv',
@@ -119,6 +128,33 @@ class _FeedPageState extends State<FeedPage> {
               caption: 'Funs',
               timeAgo: '2 hours ago',
               imageUrl: 'assets/images/aniket.jpeg',
+            ),
+            InstagramPost(
+              location: 'Varkala',
+              accountName: 'guru_preethan_31',
+              imageId:
+                  'swarna/Guru/WhatsApp_Image_2023-10-09_at_08.18.33_1_kwpovi',
+              caption: 'Funs',
+              timeAgo: '2 hours ago',
+              imageUrl: 'assets/images/guru.jpeg',
+            ),
+            InstagramPost(
+              location: 'Ooty',
+              accountName: 'zahid._khan_',
+              imageId:
+                  'swarna/Zahid/WhatsApp_Image_2023-10-09_at_08.17.08_y03m5c',
+              caption: 'Boomer',
+              timeAgo: '2 hours ago',
+              imageUrl: 'assets/images/zahid.jpeg',
+            ),
+            InstagramPost(
+              location: 'Chennai 💛',
+              accountName: 'zahid._khan_',
+              imageId:
+                  'swarna/Guru/WhatsApp_Image_2023-10-09_at_08.18.35_vyfj0s',
+              caption: 'Yellove 💛',
+              timeAgo: '2 hours ago',
+              imageUrl: 'assets/images/zahid.jpeg',
             ),
           ],
         ),

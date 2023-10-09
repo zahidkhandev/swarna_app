@@ -22,7 +22,7 @@ void showReusablePopup(BuildContext context, String message) {
             ),
             SizedBox(height: 15),
             ReusableButton(
-                buttonText: 'Seri vidu',
+                buttonText: 'Seri okay',
                 onPressed: () {
                   Navigator.pop(context);
                 })
